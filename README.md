@@ -1,21 +1,40 @@
-# punica-init-default-box
+# 去中心化投票
 
-## Introduction
+## 介绍
 
-This is a default box DApp project for [punica-python](https://github.com/punicasuite/punica-python).
+这是一个去中心化投票dapp demo项目，可用于任何需要投票选举的场景，例如选举领导人，或者为自己喜欢的观点投票等。
 
-## Getting started
+## 用法
 
-### Setting up the development environment
+** createVoteAction
 
-There are a few technical requirements before we start. Please install the following:
+管理员才可以调用，创建一个投票活动。
 
-- [Python 3.7](https://www.python.org/downloads/release/python-370/)
-- [Git](https://git-scm.com/)
+** getVoteAction
+查询活动信息
 
-### Unboxing the Template Box
+** applyToCandidate
+申请成为候选人
 
-```shell
-pip install punica
-punica init
-```
+** getApplyInfo
+查询候选人信息
+
+** approveApply
+
+管理员调用同意申请人为候选人
+
+** getCandadite
+查询候选人信息
+
+** vote
+
+给候选人投票
+
+** getPoll
+查询票数
+
+** endAction
+管理员调用结束投票
+
+** getVictor
+查询胜选者
