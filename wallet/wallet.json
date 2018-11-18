@@ -1,1 +1,114 @@
-{"name":"com.github.ontio","defaultOntid":"did:ont:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ","defaultAccountAddress":"AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ","createTime":"2018-10-31T16:30:24Z","version":"1.0","scrypt":{"n":16384,"r":8,"p":8,"dkLen":64},"identities":[{"ontid":"did:ont:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ","label":"2a909d60","lock":false,"isDefault":true,"controls":[{"key":"dsSZMHNGbbvWWoNiRNBWl46iUuGJ0QX6pH+5yJyZZ49VhD55lObAyIa/NI0Lu2Zg","id":"keys-1","address":"AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ","salt":"TbIyGI+emIoMvrDvknCCIg==","hash":"sha256","publicKey":"03f631f975560afc7bf47902064838826ec67794ddcdbcc6f0a9c7b91fc8502583","algorithm":"ECDSA","parameters":{"curve":"P-256"}}]},{"ontid":"did:ont:AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ","label":"8ff4c8d8","lock":false,"isDefault":false,"controls":[{"key":"wmyE6YmLUKbpuvhgA1arPbJHMfDOiaOUlny/LwoH4o8/KtPpRbVwgeSRwjpa88F9","id":"keys-1","address":"AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ","salt":"9mHuICV2menJ6qri6z3JmA==","hash":"sha256","publicKey":"03624058e31c2830320751a62598f726f70496c534906814d9a77363a2bffa95fe","algorithm":"ECDSA","parameters":{"curve":"P-256"}}]},{"ontid":"did:ont:AQvZMDecMoCi2y4V6QKdJBtHW1eV7Vbaof","label":"6fe929a3","lock":false,"isDefault":false,"controls":[{"key":"7KAPfhtdQyziD+9cNlSxZk2gKUfu994tg0yP2vZPFmSqUQf0E2zSymgME+y7xZqt","id":"keys-1","address":"AQvZMDecMoCi2y4V6QKdJBtHW1eV7Vbaof","salt":"sx7GsdbaBL0eOJMA3+1V4A==","hash":"sha256","publicKey":"037db763291c98e08108d7df9a66aacc27d1023112c86e7b19e0747f7aa89fc2f7","algorithm":"ECDSA","parameters":{"curve":"P-256"}}]},{"ontid":"did:ont:Ad1eYtHsTHM5aABbqSSmjG2VirxWo97UPy","label":"a5bd53f0-4e76-4834-a9af-14b533910adb","lock":false,"isDefault":false,"controls":[{"key":"EvH20aPQnfF4Fi3axqnsXQw27LnQfXBi5y0vaBIYXDllvZ6a+022+AynrDizndLM","id":"1","address":"Ad1eYtHsTHM5aABbqSSmjG2VirxWo97UPy","salt":"d8IwkVba3PqJXFwp23vtrg==","hash":"sha256","publicKey":"03956db843e141e94a52985f34e3af507bbb93e730a29c1253bf9c3142b00d397a","algorithm":"ECDSA","parameters":{"curve":"P-256"}}]}],"accounts":[{"address":"AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ","label":"f00fda8a","lock":false,"key":"Q85bbTpl67SoQ07DJ1Vbx/2UPH/+dRTqIX1AN2jO0T38jseU6ef8C4DiAxAulp8P","enc-alg":"aes-256-gcm","hash":"sha256","salt":"OqeBJgNFmdPxy8uB4oP4gg==","isDefault":true,"publicKey":"03f631f975560afc7bf47902064838826ec67794ddcdbcc6f0a9c7b91fc8502583","algorithm":"ECDSA","parameters":{"curve":"P-256"}},{"address":"AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ","label":"e68abafe","lock":false,"key":"yS/YqQG5zCy7SQGqAjcKBMAK7zWUV4Hd/E7Hn34Tcj6M0uCE2UEZnDtpWKLRaEGK","enc-alg":"aes-256-gcm","hash":"sha256","salt":"88MO1oKDkQR7VjNnoetBVA==","isDefault":false,"publicKey":"03624058e31c2830320751a62598f726f70496c534906814d9a77363a2bffa95fe","algorithm":"ECDSA","parameters":{"curve":"P-256"}},{"address":"AQvZMDecMoCi2y4V6QKdJBtHW1eV7Vbaof","label":"dc81e598","lock":false,"key":"Gr4kC1ZmUxCnCYkupgWlrfTsM4NZSgzTN/oA8QMl4zEFdMhz8kzJ5LlAZDlV/YTU","enc-alg":"aes-256-gcm","hash":"sha256","salt":"bi6hPt525RcQZ1pLVjol3A==","isDefault":false,"publicKey":"037db763291c98e08108d7df9a66aacc27d1023112c86e7b19e0747f7aa89fc2f7","algorithm":"ECDSA","parameters":{"curve":"P-256"}},{"address":"AYexMZF21nT3HWCsFnZaGyXmYdQfRZLptX","label":"55ec036a-6077-407a-9f58-0d991ec25a90","lock":false,"key":"Gs7sgz3Yzsofjx3ovvk/pD4ZsVGI1Gae3EkCLhLNL58BbiNwaKcCcBTu7kbC3PHW","enc-alg":"aes-256-gcm","hash":"sha256","salt":"AdHPH4yjRgU78JWrl6//QQ==","isDefault":false,"publicKey":"02ef6c259197cb4c2aa5c294c6eccac2e7d7372648825793fa020ea06e21bfd67c","algorithm":"ECDSA","parameters":{"curve":"P-256"}}],"extra":null}
+{
+    "accounts": [{
+        "address": "AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ",
+        "algorithm": "ECDSA",
+        "enc-alg": "aes-256-gcm",
+        "hash": "sha256",
+        "isDefault": true,
+        "key": "Q85bbTpl67SoQ07DJ1Vbx/2UPH/+dRTqIX1AN2jO0T38jseU6ef8C4DiAxAulp8P",
+        "label": "f00fda8a",
+        "lock": false,
+        "parameters": {
+            "curve": "P-256"
+        },
+        "publicKey": "03f631f975560afc7bf47902064838826ec67794ddcdbcc6f0a9c7b91fc8502583",
+        "salt": "OqeBJgNFmdPxy8uB4oP4gg==",
+        "signatureScheme": "SHA256withECDSA"
+    }, {
+        "address": "AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ",
+        "algorithm": "ECDSA",
+        "enc-alg": "aes-256-gcm",
+        "hash": "sha256",
+        "isDefault": false,
+        "key": "yS/YqQG5zCy7SQGqAjcKBMAK7zWUV4Hd/E7Hn34Tcj6M0uCE2UEZnDtpWKLRaEGK",
+        "label": "e68abafe",
+        "lock": false,
+        "parameters": {
+            "curve": "P-256"
+        },
+        "publicKey": "03624058e31c2830320751a62598f726f70496c534906814d9a77363a2bffa95fe",
+        "salt": "88MO1oKDkQR7VjNnoetBVA==",
+        "signatureScheme": "SHA256withECDSA"
+    }, {
+        "address": "AQvZMDecMoCi2y4V6QKdJBtHW1eV7Vbaof",
+        "algorithm": "ECDSA",
+        "enc-alg": "aes-256-gcm",
+        "hash": "sha256",
+        "isDefault": false,
+        "key": "Gr4kC1ZmUxCnCYkupgWlrfTsM4NZSgzTN/oA8QMl4zEFdMhz8kzJ5LlAZDlV/YTU",
+        "label": "dc81e598",
+        "lock": false,
+        "parameters": {
+            "curve": "P-256"
+        },
+        "publicKey": "037db763291c98e08108d7df9a66aacc27d1023112c86e7b19e0747f7aa89fc2f7",
+        "salt": "bi6hPt525RcQZ1pLVjol3A==",
+        "signatureScheme": "SHA256withECDSA"
+    }],
+    "createTime": "2018-10-31T16:30:24Z",
+    "defaultAccountAddress": "AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ",
+    "defaultOntid": "did:ont:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ",
+    "identities": [{
+        "controls": [{
+            "address": "AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ",
+            "algorithm": "ECDSA",
+            "enc-alg": "aes-256-gcm",
+            "hash": "sha256",
+            "id": "keys-1",
+            "key": "dsSZMHNGbbvWWoNiRNBWl46iUuGJ0QX6pH+5yJyZZ49VhD55lObAyIa/NI0Lu2Zg",
+            "parameters": {
+                "curve": "P-256"
+            },
+            "publicKey": "03f631f975560afc7bf47902064838826ec67794ddcdbcc6f0a9c7b91fc8502583",
+            "salt": "TbIyGI+emIoMvrDvknCCIg=="
+        }],
+        "isDefault": true,
+        "label": "2a909d60",
+        "lock": false,
+        "ontid": "did:ont:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ"
+    }, {
+        "controls": [{
+            "address": "AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ",
+            "algorithm": "ECDSA",
+            "enc-alg": "aes-256-gcm",
+            "hash": "sha256",
+            "id": "keys-1",
+            "key": "wmyE6YmLUKbpuvhgA1arPbJHMfDOiaOUlny/LwoH4o8/KtPpRbVwgeSRwjpa88F9",
+            "parameters": {
+                "curve": "P-256"
+            },
+            "publicKey": "03624058e31c2830320751a62598f726f70496c534906814d9a77363a2bffa95fe",
+            "salt": "9mHuICV2menJ6qri6z3JmA=="
+        }],
+        "isDefault": false,
+        "label": "8ff4c8d8",
+        "lock": false,
+        "ontid": "did:ont:AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ"
+    }, {
+        "controls": [{
+            "address": "AQvZMDecMoCi2y4V6QKdJBtHW1eV7Vbaof",
+            "algorithm": "ECDSA",
+            "enc-alg": "aes-256-gcm",
+            "hash": "sha256",
+            "id": "keys-1",
+            "key": "7KAPfhtdQyziD+9cNlSxZk2gKUfu994tg0yP2vZPFmSqUQf0E2zSymgME+y7xZqt",
+            "parameters": {
+                "curve": "P-256"
+            },
+            "publicKey": "037db763291c98e08108d7df9a66aacc27d1023112c86e7b19e0747f7aa89fc2f7",
+            "salt": "sx7GsdbaBL0eOJMA3+1V4A=="
+        }],
+        "isDefault": false,
+        "label": "6fe929a3",
+        "lock": false,
+        "ontid": "did:ont:AQvZMDecMoCi2y4V6QKdJBtHW1eV7Vbaof"
+    }],
+    "name": "com.github.ontio",
+    "scrypt": {
+        "dkLen": 64,
+        "n": 16384,
+        "p": 8,
+        "r": 8
+    },
+    "version": "1.0"
+}

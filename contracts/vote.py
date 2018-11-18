@@ -6,8 +6,6 @@ from boa.interop.System.Runtime import CheckWitness, Notify, Serialize, Deserial
 from boa.interop.System.ExecutionEngine import GetExecutingScriptHash
 from boa.builtins import ToScriptHash, sha256, concat
 
-# modify to the admin address
-admin = ToScriptHash('AQf4Mzu1YJrhz9f3aRkkwSm9n3qhXGSh4p')
 
 # 举办选举活动
 KEY_VOTE_ACTION = 'VoteAction'
@@ -87,6 +85,7 @@ def createVoteAction(actionName, admin):
     if Get(ctx, concat(KEY_VOTE_ACTION, actionName)):
         Notify(["action name have existed"])
         return False
+    Notify([admin])
     if not CheckWitness(admin):
         Notify(["admin CheckWitness failed"])
         return False
@@ -114,8 +113,8 @@ def applyToCandidate(actionName, address):
     apply to be candidate of a vote action
     :return:
     '''
-    if not CheckWitness(address):
-        return False
+    #if not CheckWitness(address):
+    #    return False
     if not Get(ctx, concat(KEY_CANDIDATE_APPLY, actionName)):
         appliesList = []
     else:
@@ -150,15 +149,12 @@ def approveApply(actionName, admin, address):
         return False
     if not CheckWitness(admin):
         return False
+    Notify(["111111"])
     info = Get(ctx, concat(KEY_VOTE_ACTION, actionName))
-    Notify(["11111111111"])
     actionInfo = Deserialize(info)
-    Notify(["2222222222", actionInfo[1]])
     if actionInfo[1] != admin:
         return False
-    Notify(["33333333333"])
     appliers = Get(ctx, concat(KEY_CANDIDATE_APPLY, actionName))
-    Notify(["4444444", appliers])
     if appliers is None or appliers == "":
         return False
     applierList = Deserialize(appliers)
@@ -167,12 +163,18 @@ def approveApply(actionName, admin, address):
         if applier == address:
             hasApplier = True
     if not hasApplier:
+        Notify(["no applier", address])
         return False
     candidate = Get(ctx, concat(KEY_CANDIDATE, actionName))
     if candidate is None or candidate == "":
         candidateList = []
     else:
         candidateList = Deserialize(candidate)
+    if len(candidateList) != 0:
+        for candidateTemp in candidateList:
+            if candidateTemp == address:
+                Notify(["have been a candidate", address])
+                return False
     candidateList.append(address)
     Put(ctx, concat(KEY_CANDIDATE, actionName), Serialize(candidateList))
     applierList2 = []
@@ -180,6 +182,7 @@ def approveApply(actionName, admin, address):
         if applier != address:
             applierList2.append(applier)
     Put(ctx, concat(KEY_CANDIDATE_APPLY, actionName), Serialize(applierList2))
+    Notify(["end"])
     return True
 
 
@@ -189,9 +192,10 @@ def getCandadite(actionName):
     :return:
     '''
     candidate = Get(ctx, concat(KEY_CANDIDATE, actionName))
-    if candidate is None or candadite == "":
+    if candidate is None or candidate == "":
         return False
     candidateList = Deserialize(candidate)
+    Notify([candidateList])
     return candidateList
 
 
@@ -216,8 +220,6 @@ def vote(actionName, voter, candidate):
     if num is None or num == "":
         num = 0
     num = num + 1
-    Notify(["111111111", num])
-    Notify(["222222", actionName,candidate])
     Put(ctx, concat(concat(KEY_POLL, actionName), candidate), num)
     return True
 
@@ -227,10 +229,7 @@ def getPoll(actionName, candidate):
     query poll
     :return:
     '''
-    Notify(["11111"])
     num = Get(ctx, concat(concat(KEY_POLL, actionName), candidate))
-    Notify(["222222", num])
-    Notify(["3333333", actionName,candidate])
     if num is None or num == "":
         return 0
     return num

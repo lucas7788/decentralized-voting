@@ -17,17 +17,23 @@
         "gasLimit": 31000000
     },
     "invokeConfig": {
-        "abi": "hello_ontology_abi.json",
+        "abi": "vote_abi.json",
         "defaultPayer": "AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ",
         "gasPrice": 0,
         "gasLimit": 20000,
         "functions": [
             {
-                "name": "createVoteAction",
-                "params": {
-                    "actionName": "String:action1",
-                    "admin": "ByteArray:8f651d459b4f146380dab28e7cfb9d4bb9c3fcd1"
-                },
+                "operation": "createVoteAction",
+                "args": [
+                  {
+                      "name":"actionName",
+                      "value": "String:action1"
+                  },
+                  {
+                    "name":"admin",
+                    "value": "ByteArray:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ"
+                  }
+                ],
                 "signers": {
                     "m": 1,
                     "signer": [
@@ -37,19 +43,28 @@
                 "preExec": false
             },
             {
-                "name": "getVoteAction",
-                "params": {
-                    "actionName": "String:action1"
-                },
+                "operation": "getVoteAction",
+                "args": [
+                  {
+                      "name":"actionName",
+                      "value": "String:action1"
+                  }
+                ],
                 "signers": {},
                 "preExec": true
             },
             {
-                "name": "applyToCandidate",
-                "params": {
-                    "actionName": "String:action1",
-                    "address": "ByteArray:AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ"
-                },
+                "operation": "applyToCandidate",
+                "args": [
+                  {
+                      "name":"actionName",
+                      "value": "String:action1"
+                  },
+                  {
+                    "name":"address",
+                    "value": "ByteArray:AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ"
+                  }
+                ],
                 "signers": {
                     "m": 1,
                     "signer": [
@@ -59,20 +74,32 @@
                 "preExec": false
             },
             {
-                "name": "getApplyInfo",
-                "params": {
-                    "actionName": "String:action1"
-                },
+                "operation": "getApplyInfo",
+                "args": [
+                  {
+                      "name": "actionName",
+                      "value": "String:action1"
+                  }
+                ],
                 "signers": {},
                 "preExec": true
             },
             {
-                "name": "approveApply",
-                "params": {
-                    "actionName": "String:action1",
-                    "admin": "ByteArray:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ",
-                    "address": "ByteArray:AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ"
-                },
+                "operation": "approveApply",
+                "args": [
+                  {
+                      "name":"actionName",
+                      "value": "String:action1"
+                  },
+                  {
+                    "name":"admin",
+                    "value": "ByteArray:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ"
+                  },
+                  {
+                    "name":"address",
+                    "value": "ByteArray:AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ"
+                  }
+                ],
                 "signers": {
                     "m": 1,
                     "signer": [
@@ -82,20 +109,32 @@
                 "preExec": false
             },
             {
-                "name": "getCandadite",
-                "params": {
-                    "actionName": "String:action1"
-                },
+                "operation": "getCandadite",
+                "args": [
+                  {
+                      "name": "actionName",
+                      "value": "String:action1"
+                  }
+                ],
                 "signers": {},
                 "preExec": true
             },
             {
-                "name": "vote",
-                "params": {
-                    "actionName": "String:action1",
-                    "voter": "ByteArray:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ",
-                    "candadite": "ByteArray:AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ"
-                },
+                "operation": "vote",
+                "args": [
+                  {
+                      "name":"actionName",
+                      "value": "String:action1"
+                  },
+                  {
+                    "name":"voter",
+                    "value": "ByteArray:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ"
+                  },
+                  {
+                      "name":"candadite",
+                      "value": "ByteArray:AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ"
+                  }
+                ],
                 "signers": {
                     "m": 1,
                     "signer": [
@@ -105,20 +144,32 @@
                 "preExec": false
             },
             {
-                "name": "getPoll",
-                "params": {
-                    "actionName": "String:action1",
-                    "candidate": "ByteArray:AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ"
-                },
+                "operation": "getPoll",
+                "args": [
+                  {
+                      "name":"actionName",
+                      "value": "String:action1"
+                  },
+                  {
+                    "name":"candidate",
+                    "value": "ByteArray:AecaeSEBkt5GcBCxwz1F41TvdjX3dnKBkJ"
+                  }
+                ],
                 "signers": {},
                 "preExec": true
             },
             {
-                "name": "endAction",
-                "params": {
-                    "actionName": "String:action1",
-                    "admin": "ByteArray:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ"
-                },
+                "operation": "endAction",
+                "args": [
+                  {
+                      "name":"actionName",
+                      "value": "String:action1"
+                  },
+                  {
+                    "name":"admin",
+                    "value": "ByteArray:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ"
+                  }
+                ],
                 "signers": {
                     "m": 1,
                     "signer": [
@@ -128,10 +179,13 @@
                 "preExec": false
             },
             {
-                "name": "getVictor",
-                "params": {
-                    "actionName": "String:action1"
-                },
+                "operation": "getVictor",
+                "args": [
+                  {
+                      "name":"actionName",
+                      "value": "String:action1"
+                  }
+                ],
                 "signers": {},
                 "preExec": true
             }
